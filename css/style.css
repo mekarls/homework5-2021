@@ -163,9 +163,9 @@ header{
   border: 10px solid black;
   padding: 30px;
   /*Your code here:*/
-  /* align-items: end; */
+  align-items: end;
   align-self: center;
-  /* justify-self: stretch; */
+  justify-self: normal;
 }
 
 
@@ -186,16 +186,21 @@ header{
   /*Req 11*/
   .container{
     /*Your code here:*/
+    display: grid;
+    grid-template-columns: 50px auto 500px auto 50px;
+    grid-template-rows: 400px 425px 425px 400px;
   }
 
   /*Req 12*/
   .about, .client, .method-image, .contact-image{
     /*Your code here:*/
+    grid-column: 3 / span 2;
   }
 
   /*Req 13*/
   .about-image, .client-image, .method, .contacts{
     /*Your code here:*/
+    grid-column: 2 / span 2;
   }
 }
 
